@@ -1,4 +1,5 @@
-# Omdena Trieste Chapter - Using Social Media to Study Long Covid in Italy
+# Omdena Trieste Chapter
+# Using Social Media to Study Long Covid in Italy
 
 
 ## Contribution Guidelines
