@@ -1,8 +1,4 @@
-# chapter-project-repository-template
-Use this Repository as a template for creating Local Chapter Repositories
-
-
-# [Chapter Challenge Name]
+# Omdena Trieste Chapter - Using Social Media to Study Long Covid in Italy
 
 
 ## Contribution Guidelines
