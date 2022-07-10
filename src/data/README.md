@@ -15,4 +15,5 @@ They have been already filtered for language (only Italian) and country (only It
 ## Structure of the files:
 
 Each zip file contains a csv file with 4 columns: Date, User, Tweet_ID, Tweet content. 
+
 Data is estimated to be over 100K tweets worth of content.
