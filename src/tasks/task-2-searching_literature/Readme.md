@@ -8,7 +8,7 @@ Data Availability Statement: Adhering to Twitter’s data redistribution policie
 3. **Paper similar to our project objective-Twitter Sentiment Analysis of Long COVID Syndrome** https://www.cureus.com/articles/99095-twitter-sentiment-analysis-of-long-covid-syndrome#references
 4. Twitter web scraping and Topic Modelling project from Omdena ACET challenge https://omdena.com/blog/infrastructural-needs/
 
-## Pertinent to ongoing issues discussed on 11/02/2022
+## Other links
 6. **Short article by the John Hopkins about long Covid effects.** https://www.hopkinsmedicine.org/health/conditions-and-diseases/coronavirus/covid-long-haulers-long-term-effects-of-covid19#:~:text=Peo[…]ious%20life
 7. **Article about long covid from Omdena problem statement document** https://www.iss.it/it/web/guest/long-covid-sintomi
 8. **Unofficial twitter community for long Covid in Italy** https://twitter.com/longcoviditalia?lang=en
