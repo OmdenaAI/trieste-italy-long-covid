@@ -8,20 +8,20 @@ Data Availability Statement: Adhering to Twitter’s data redistribution policie
 4. **Article about long covid from Omdena problem statement document** https://www.iss.it/it/web/guest/long-covid-sintomi
 5. **Unofficial twitter community for long Covid in Italy** https://twitter.com/longcoviditalia?lang=en
 6. **Nature article with comprehensive list of symptoms associated with long COVID via meta analysis** https://www.nature.com/articles/s41598-021-95565-8
-     -Documents derived from this article:
-     -Bilingual list of symptoms: https://omdenatrieste-bp42317.slack.com/files/U03MNHUA7G8/F03MEKRPEQ6/symptoms_list_en_ita.docx
-     -Symptom distribution by no. of cases and sample sizes https://omdenatrieste-bp42317.slack.com/files/U03LPFY5ZBQ/F03MMF2N6PM/long_covid_symptoms-_nature_study.xlsx
-     -Need to include clinical test results (e.g. d-dimer etc.) from the Nature article, above docs only contain symptoms like fatigue, shortness of breath etc...
+     - Documents derived from this article:
+     - Bilingual list of symptoms: https://github.com/OmdenaAI/trieste-italy-long-covid/blob/main/src/tasks/task-2-searching_literature/symptoms_list_en_ita.docx
+     - Symptom distribution by no. of cases and sample sizes https://github.com/OmdenaAI/trieste-italy-long-covid/blob/main/src/tasks/task-2-searching_literature/Long%20covid%20symptoms-%20Nature%20Study.xlsx
+     - Need to include clinical test results (e.g. d-dimer etc.) from the Nature article, above docs only contain symptoms like fatigue, shortness of breath etc...
 7.  **Another article from the Omdena problem statement document** https://www.thelancet.com/journals/eclinm/article/PIIS2589-5370(21)00299-6/fulltext
-     -Document derived from this article:
-     -Bilingual list of symptoms https://omdenatrieste-bp42317.slack.com/files/U03MNHUA7G8/F03MQT358DS/long_covid_symptoms_list2_en_it.docx
-     -Can be combined with documents from (5) to get best results.
+     - Document derived from this article:
+     - Bilingual list of symptoms https://github.com/OmdenaAI/trieste-italy-long-covid/blob/main/src/tasks/task-2-searching_literature/long%20covid%20symptoms%20list2%20en_it.docx
+     - Can be combined with documents from (5) to get best results.
 8. **Long covid study for children between 0 to 16 years of age** https://ijponline.biomedcentral.com/articles/10.1186/s13052-022-01282-x#Tab4
 9. **Omdena Singapore challenge on mental health impact of covid 19** https://omdena.com/blog/risk-predictor-for-mental-impacts-due-to-covid-19-using-ai/
-     -Final Dashboard created in this challenge: https://public.tableau.com/app/profile/claudia.chan/viz/OmdenaFinalv2/Dashboard3
+     - Final Dashboard created in this challenge: https://public.tableau.com/app/profile/claudia.chan/viz/OmdenaFinalv2/Dashboard3
 10. **Miscellaneous links/resources:**
-     -Twitter web scraping and topic modelling project from Omdena ACET challenge https://omdena.com/blog/infrastructural-needs/ .
-     -Mental health capstone analysis using twitter based on phillippines https://www.youtube.com/watch?v=ycIt8Rd0YQ4&t=68s
-     -Omdena post Best Topic Modeling Python Libraries Compared (+ Top 2022 NLP Projects) https://omdena.com/blog/topic-modeling-python-libraries-nlp-projects/
+     - Twitter web scraping and topic modelling project from Omdena ACET challenge https://omdena.com/blog/infrastructural-needs/ .
+     - Mental health capstone analysis using twitter based on phillippines https://www.youtube.com/watch?v=ycIt8Rd0YQ4&t=68s
+     - Omdena post Best Topic Modeling Python Libraries Compared (+ Top 2022 NLP Projects) https://omdena.com/blog/topic-modeling-python-libraries-nlp-projects/
 
 The above list does not include links related to Github repos/other tutorials for scraping data.
