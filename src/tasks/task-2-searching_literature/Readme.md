@@ -1,4 +1,5 @@
 
+# List of links and resources gathered thus far (task6 not included):
 1. **Twitter Covid dataset**: TBCOV: Two Billion Multilingual COVID-19 Tweets with Sentiment, Entity, Geo, and Gender Labels | HTML
 https://www.mdpi.com/2306-5729/7/1/8/htm . Top five languages in their dataset, i.e., English, Spanish, Portuguese, French, and Italian,
 Data Availability Statement: Adhering to Twitter’s data redistribution policies, we only share tweet ids and user ids along with all derived attributes, such as sentiment labels, named entities. We make the whole dataset available at https://crisisnlp.qcri.org/tbcov
