@@ -1,5 +1,8 @@
 
 # List of links and resources gathered thus far:
+## Pertinent to keyword filtering for long-covid on 12/07/2022
+New resource - **Hashtags focused on the comparison of specific Long Covid symptoms and support groups to long term chronic illnesses** https://www.researchgate.net/figure/Collection-of-top-hashtags-used-in-relation-to-posts-mentioning-long-Covid-and-related_fig5_356607795
+<br> Additional hashtags to use while filtering: #LongCovid #CountLongCovid #CovidVaccine #COVID #longhaulers #StopRestPace #LongCovidPhysio
 
 ## Pertinent to ongoing issues discussed on 11/07/2022
 1. **Twitter Covid dataset**: TBCOV: Two Billion Multilingual COVID-19 Tweets with Sentiment, Entity, Geo, and Gender Labels | HTML
