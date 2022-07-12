@@ -14,20 +14,35 @@ They have been already filtered for language (only Italian) and country (only It
 * Batch H: TBCOV dataset data sample on 10/01/2021
 
 The following dates are still waiting to be downloaded:
+
 02/01/2022
+
 09/01/2022
+
 16/01/2022
+
 23/01/2022
+
 30/01/2022
+
 06/02/2022
+
 13/02/2022
+
 20/02/2022
+
 27/02/2022
+
 06/03/2022
+
 13/03/2022
+
 20/03/2022
+
 27/03/2022
+
 03/04/2022
+
 10/04/2022
 
 ## Structure of the files:
