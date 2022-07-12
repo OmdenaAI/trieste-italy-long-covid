@@ -10,6 +10,8 @@ They have been already filtered for language (only Italian) and country (only It
 * Batch E_1: from 18/04/2021 to 30/05/2021 
 * Batch E_2: from 06/06/2021 to 18/07/2021
 * Batch F: from 25/07/2021 to 05/09/2021
+* Batch G: from 17/04/2022 to 12/06/2022
+* Batch H: TBCOV dataset data sample on 10/01/2021
 
 
 ## Structure of the files:
