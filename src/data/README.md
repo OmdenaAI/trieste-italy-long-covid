@@ -15,7 +15,7 @@ They have been already filtered for language (only Italian) and country (only It
 
 The following dates are still waiting to be downloaded:
 
-02/01/2022
+02/01/2022   (I'm working on this Giulia)
 
 09/01/2022
 
