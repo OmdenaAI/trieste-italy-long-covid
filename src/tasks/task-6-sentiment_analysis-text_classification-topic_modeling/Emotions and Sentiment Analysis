@@ -1,0 +1,142 @@
+#.ipynb file for svm sentiment analysis of Italian tweets. Uses a combination of emotion and sentiment coding using U feel-it 
+#(https://huggingface.co/MilaNLProc/feel-it-italian-emotion). Results from the analysis conducted with 2021 Twint twitter data on long Covid 
+#with ~9500 tweets is also posted.
+
+%matplotlib inline
+%config InlineBackend.figure_format = 'retina'
+
+import numpy as np
+import pandas as pd
+from bs4 import BeautifulSoup
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+import nltk
+from nltk.corpus import stopwords
+from nltk.stem import SnowballStemmer
+from nltk.tokenize import TweetTokenizer
+
+from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
+from sklearn.linear_model import LogisticRegression
+from sklearn.svm import SVC
+from sklearn.model_selection import train_test_split, StratifiedKFold, cross_val_score
+from sklearn.pipeline import make_pipeline, Pipeline
+from sklearn.model_selection import GridSearchCV
+from sklearn.metrics import make_scorer, accuracy_score, f1_score
+from sklearn.metrics import roc_curve, auc
+from sklearn.metrics import confusion_matrix, roc_auc_score, recall_score, precision_score
+from sklearn import svm, datasets
+import sklearn.model_selection as model_selection
+from sklearn.metrics import accuracy_score
+from sklearn.metrics import f1_score
+
+data = pd.read_csv("file.csv", encoding='latin-1')
+data = data.copy()
+print(data)
+
+data_clean = data.copy()
+data_clean['S'] = data_clean['Total'].\
+    apply(lambda x: 1 if x>0 else -1 if x<0 else 0)
+
+data_clean['text'] = data_clean['text'].apply(lambda x: BeautifulSoup(x, "lxml").text)
+
+from typing import ValuesView
+data_clean.head()
+ValuesView(data_clean)
+print(data_clean)
+(data_clean)
+
+a = data_clean.to_csv('data.csv')   
+
+train, test = train_test_split(data_clean, test_size=0.30, random_state=1)
+X_train = train['text'].values
+X_test = test['text'].values
+y_train = train['S']
+y_test = test['S']
+
+import pandas as pd
+import numpy as np
+from nltk.tokenize import word_tokenize
+from nltk import pos_tag
+from nltk.corpus import stopwords
+from nltk.stem import WordNetLemmatizer
+from sklearn.preprocessing import LabelEncoder
+from collections import defaultdict
+from nltk.corpus import wordnet as wn
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn import model_selection, naive_bayes, svm
+from sklearn.metrics import accuracy_score
+import nltk
+nltk.download('stopwords')
+
+
+def tokenize(text): 
+    tknzr = TweetTokenizer()
+    return tknzr.tokenize(text)
+
+def stem(doc):
+    return (stemmer.stem(w) for w in analyzer(doc))
+
+en_stopwords = set(stopwords.words("italian")) 
+
+vectorizer = CountVectorizer(
+    analyzer = 'word',
+    tokenizer = tokenize,
+    lowercase = True,
+    ngram_range=(1, 1),
+    stop_words = en_stopwords)
+
+Tfidf_vect = TfidfVectorizer(max_features=5000)
+Tfidf_vect.fit(data_clean['text'])
+Train_X_Tfidf = Tfidf_vect.transform(X_train)
+Test_X_Tfidf = Tfidf_vect.transform(X_test)
+
+# fit the training dataset on the NB classifier
+Naive = naive_bayes.MultinomialNB()
+Naive.fit(Train_X_Tfidf,y_train)
+# predict the labels on validation dataset
+predictions_NB = Naive.predict(Test_X_Tfidf)
+# Use accuracy_score function to get the accuracy
+print("Naive Bayes Accuracy Score -> ",accuracy_score(predictions_NB, y_test)*100)
+
+# importing classification report
+from sklearn.metrics import classification_report
+
+# printing the report
+print(classification_report(y_test, predictions_NB))
+
+from sklearn.metrics import recall_score, precision_score
+from sklearn.model_selection import GridSearchCV
+
+# Classifier - Algorithm - SVM
+# fit the training dataset on the classifier
+SVM = svm.SVC(C=1.0, kernel='rbf', degree=3, gamma='auto')
+SVM.fit(Train_X_Tfidf, y_train)
+# predict the labels on validation dataset
+predictions_SVM = SVM.predict(Test_X_Tfidf)
+# Use accuracy_score function to get the accuracy
+print("SVM Accuracy Score -> ",accuracy_score(predictions_SVM, y_test)*100)
+
+# importing seaborn
+import seaborn as sns
+
+# Making the Confusion Matrix
+from sklearn.metrics import confusion_matrix
+
+# providing actual and predicted values
+cm = confusion_matrix(y_test, predictions_SVM)
+
+# If True, write the data value in each cell
+sns.heatmap(cm,annot=True)
+
+# saving confusion matrix in png form
+plt.savefig('confusion_Matrix.png')
+print(cm)
+
+# importing classification report
+from sklearn.metrics import classification_report
+
+# printing the report
+print(classification_report(y_test, predictions_SVM))
+
+
