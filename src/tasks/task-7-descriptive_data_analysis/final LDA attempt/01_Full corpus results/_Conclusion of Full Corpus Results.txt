@@ -1,0 +1,21 @@
+UMass optimization result:
+
+	--Refer to *umass 6 topics* sheet in Excel workbook to see why the 6 topics after u_mass optimization via elbow method for overall corpus(~25k) were not suitable for interpretation.
+	--Refer to *lda_visualization_1_6_topics_umass_whole_corpus.html* to see the large overlap between 3 out of 6 topics.
+	--Refer to *6 topics after u_mass optimizn with elbow method* txt file to see the topic model if required.
+	
+
+C_v optimization result:
+
+	--Refer to *25 topics after c_v optimizn with elbow method* txt file to see the topic model if required. Such a topic number too high, so stuck with lower number to interpret results (num_topics=10).
+	--Refer to *10 topics after c_v optimizn with elbow method* txt file to see the topic model if required.
+	--Refer to *c_v 10 topics* sheet in Excel workbook to see why the 10 topics were not suitable for interpretation. They were too confusing to even assign themes, let alone to test topic dist with sample tweets. Plus, it would give similar or worse results than the umass attempt, which itself was not good enough.
+	--Refer to *lda_visualization_2a_10_topics_cv_whole_corpus.html* (or 2b or 2c versions of this file) to see the high overlap between different topic numbers.
+	
+
+Thus, going based on elbow method was not sufficient. 
+Even defying the elbow method results did not give interpretable topics.
+
+Conclusion:
+1. Performance on full corpus together is not good despite making multiple passes thru corpus in the model and performing hyperparameter tuning. So in next attempts, work with divided corpus.
+2. Poor results may also be due to inherent limitations of standard LDA, namely that standard LDA does not do well with short documents (in our case, tweets). So, we should attempt dynamic topic modeling through sequential LDA model to check if results are better.

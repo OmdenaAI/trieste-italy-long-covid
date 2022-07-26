@@ -1,0 +1,81 @@
+
+[(20,
+  '0.192*"gente" + 0.112*"tipo" + 0.066*"tema" + 0.056*"postumo" + '
+  '0.043*"corpo" + 0.032*"comunicazione" + 0.031*"piacere" + '
+  '0.021*"green_pass" + 0.019*"possibilita" + 0.018*"azione"'),
+ (10,
+  '0.083*"forma" + 0.079*"evidenza" + 0.065*"tampone" + 0.049*"terrore" + '
+  '0.044*"contatto" + 0.034*"febbraio" + 0.029*"monitoraggio" + '
+  '0.025*"anticorpo" + 0.025*"silenzio" + 0.025*"prova"'),
+ (17,
+  '0.136*"volta" + 0.066*"impatto" + 0.054*"medicina" + 0.049*"complicanza" + '
+  '0.044*"organo" + 0.038*"novembre" + 0.033*"sostegno" + 0.032*"occhio" + '
+  '0.026*"presidente" + 0.021*"posizione"'),
+ (6,
+  '0.090*"articolo" + 0.080*"distanza" + 0.076*"genitore" + 0.053*"legge" + '
+  '0.045*"longcovidkids" + 0.040*"bisogno" + 0.038*"inizio" + '
+  '0.032*"scienziato" + 0.026*"popolazione" + 0.025*"odore"'),
+ (2,
+  '0.147*"numero" + 0.072*"pericolo" + 0.070*"resto" + 0.037*"speranza" + '
+  '0.034*"prevenzione" + 0.028*"pediatra" + 0.026*"certezza" + '
+  '0.025*"manifestazione" + 0.024*"capisco" + 0.023*"parente"'),
+ (4,
+  '0.331*"cosa" + 0.074*"ragione" + 0.063*"informazione" + 0.044*"realta" + '
+  '0.033*"vittima" + 0.029*"miliardo" + 0.027*"terza_dosa" + 0.025*"decina" + '
+  '0.019*"morbillo" + 0.017*"terapia_intensiva"'),
+ (1,
+  '0.129*"casa" + 0.070*"ragazzo" + 0.070*"pero" + 0.060*"risposta" + '
+  '0.037*"riabilitazione" + 0.036*"marzo" + 0.031*"confronto" + 0.030*"mano" + '
+  '0.030*"stress" + 0.026*"contaga"'),
+ (22,
+  '0.229*"dato" + 0.066*"momento" + 0.058*"domanda" + 0.055*"dose" + '
+  '0.048*"testimonianza" + 0.035*"evento" + 0.032*"definizione" + '
+  '0.027*"trasmissione" + 0.026*"esame" + 0.026*"immunita"'),
+ (15,
+  '0.195*"causa" + 0.091*"scienza" + 0.075*"polmone" + 0.049*"guarigione" + '
+  '0.049*"cuore" + 0.046*"misura" + 0.037*"fenomeno" + 0.032*"memoria" + '
+  '0.026*"strategia" + 0.025*"mascherine"'),
+ (14,
+  '0.144*"bimbo" + 0.078*"mondo" + 0.074*"strascico" + 0.071*"raffreddore" + '
+  '0.057*"migliaio" + 0.047*"notizia" + 0.047*"stanchezza" + 0.030*"nome" + '
+  '0.028*"soluzione" + 0.025*"siero"'),
+ (12,
+  '0.446*"effetto" + 0.065*"modo" + 0.035*"delle_persone" + 0.028*"fonte" + '
+  '0.026*"gennaio" + 0.023*"della_popolazione" + 0.018*"sintomatologia" + '
+  '0.017*"limite" + 0.017*"diritto" + 0.017*"successo"'),
+ (23,
+  '0.451*"sintomo" + 0.077*"settimana" + 0.053*"storia" + 0.042*"dubbio" + '
+  '0.035*"dolore" + 0.033*"test" + 0.031*"forza" + 0.022*"febbre" + '
+  '0.012*"affaticamento" + 0.012*"esposizione"'),
+ (8,
+  '0.171*"termine" + 0.130*"vita" + 0.110*"medico" + 0.094*"salute" + '
+  '0.068*"pandemia" + 0.046*"fatto" + 0.029*"esista" + 0.025*"donna" + '
+  '0.024*"consiglio" + 0.023*"mamma"'),
+ (19,
+  '0.494*"anno" + 0.057*"questione" + 0.057*"disturbo" + 0.056*"decesso" + '
+  '0.028*"infiammazione" + 0.020*"trattamento" + 0.016*"messaggio" + '
+  '0.013*"ondata" + 0.012*"giornalista" + 0.011*"posto"'),
+ (24,
+  '0.344*"mese" + 0.117*"omicron" + 0.051*"esempio" + 0.041*"sindrome" + '
+  '0.037*"incidenza" + 0.033*"aumento" + 0.031*"parola" + 0.027*"controllo" + '
+  '0.023*"contagi" + 0.021*"mancanza"'),
+ (13,
+  '0.304*"vaccino" + 0.132*"infezione" + 0.119*"vaccinazione" + 0.035*"morte" '
+  '+ 0.029*"costo" + 0.027*"serie" + 0.025*"differenza" + 0.025*"rapporto" + '
+  '0.016*"concentrazione" + 0.014*"fare"'),
+ (16,
+  '0.203*"conseguenza" + 0.178*"danno" + 0.100*"grazie" + 0.057*"cervello" + '
+  '0.052*"colpa" + 0.043*"amico" + 0.035*"motivo" + 0.025*"lungo_termina" + '
+  '0.021*"pensiero" + 0.021*"maniera"'),
+ (5,
+  '0.322*"problema" + 0.152*"paziente" + 0.092*"morto" + 0.068*"influenza" + '
+  '0.067*"ricerca" + 0.046*"paese" + 0.039*"condizione" + 0.020*"circolazione" '
+  '+ 0.018*"vaccinato" + 0.015*"rianimazione"'),
+ (18,
+  '0.245*"persona" + 0.110*"cura" + 0.104*"milione" + 0.053*"patologia" + '
+  '0.042*"situazione" + 0.041*"idea" + 0.021*"gruppo" + 0.021*"fine" + '
+  '0.020*"emergenza" + 0.019*"contagiato"'),
+ (7,
+  '0.453*"bambino" + 0.126*"rischio" + 0.046*"contagio" + 0.039*"misc" + '
+  '0.026*"senso" + 0.021*"attenzione" + 0.020*"livello" + 0.016*"esperienza" + '
+  '0.015*"scelta" + 0.013*"favore"')]
