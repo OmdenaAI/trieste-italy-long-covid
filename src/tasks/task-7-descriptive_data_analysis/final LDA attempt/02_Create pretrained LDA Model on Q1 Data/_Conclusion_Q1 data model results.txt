@@ -1,0 +1,8 @@
+This LDA Model is trained on Q1 data (July to September data) of the corpus.
+
+--The resulting topic model is available in 6 topics Q1 data text file or in *Final Q1 6 Topics* sheet of Excel workbook.
+--The coherence values and elbow graph images are in the folder. As such, we went with 6 topics with 0.52 c_v because this was a manageable and coherent set of topics.
+--This model is interpretable for us. Themes could be assigned to each topic. The topic distribution for specific tweets was tested to confirm if the model assigned topics suitably. Please see *Final Q1 6 Topics* sheet of Excel workbook for more details.
+--It was found that distribution was quite good (i.e. when a tweet was given to the model, it assigned more weightage to the topics actually covered by the tweet and less weightage to other topics). The results of this test in text form is available in **Topic dist of test tweets_Q1_data.txt** file.
+--Thus, this is a good model to train the rest of the corpus (Q2 to Q4 data) with sequential LDA model. This model is considered the pretrained model and provided as input to sequential LDA Model.
+
