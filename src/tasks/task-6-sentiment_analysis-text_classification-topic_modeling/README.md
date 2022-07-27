@@ -2,18 +2,15 @@
 
 ## sentiment analysis
 
-1- use [XLM-T](https://huggingface.co/cardiffnlp/twitter-xlm-roberta-base-sentiment)  the multilingual model as a zero shot classification on our dataset
+Two models were compared to our dataset of manual labels (199 labels) so that we can choose the model with the highest performance. The models were 
+
+XLM-T and neuraly models. Both are available on huggingface. Both models yielded a very low performance. We couldn't compare the feel-it model because its sentiments contained only positive and negative. However, our manual labeling contained negative, neutral and positive. 
+
+We have chosen the feel-it model. Firstly, we have found a high concordance between the manual label and feel-it label in the positive and negative classes. In addition, feel-it emotion is the only model that we found that provides emotions as well as sentiments. 
+
+We have applied the emotion classification to our full long-covid dataset (around 22500 tweets). Next, we created word clouds and some exploratory data analysis for the tweets with their corresponding emotion. 
 
 
-2- fine tune XLM-T  on our dataset
-
-3- manually label a sample of our data  both for sentiment and binary classification
-4- fine tune alberto-it on our data
-5- compare models
-
-## classification
 
 
-1- use the manually labelled data that we have labelled above ==> long covid - no long covid
-2- fine tune a model on our data for sequence classification like this [one](https://huggingface.co/llangnickel/long-covid-classification/blob/bd8eac3a20979689a8a3bcff2e64ac71f6b5cb4c/README.md)
 
