@@ -34,7 +34,7 @@ This folder will contain the code/results of final LDA entirely performed using 
 
 
 ## 4. LdaModel on Q2 to Q4 data (20,454 tweets) 
-   - Create LDAModel on Q2 to Q4 data using hyperparameters of the pretrained model (i.e. LdaModel trained on Q1 data). <br>
+   - Method 1: Create LDAModel on Q2 to Q4 data using hyperparameters of the pretrained model (i.e. LdaModel trained on Q1 data). <br>
    
    #### Results: **6 themes/topics** discovered by the model. They are as follows (LC= long-covid). <br>
   ``` 
@@ -46,8 +46,8 @@ This folder will contain the code/results of final LDA entirely performed using 
    6. Impact of LC in terms of time OR Risks/Symptoms of LC
    ```
    
-   - Use LdaModel of Q1 data directly to perform prediction of topic distribution on tweets from Q2 to Q4 data
-     - **Results:** This prediction approach did not yield suitable results.
+   -  Method 2: Use LdaModel of Q1 data directly to perform prediction of topic distribution on tweets from Q2 to Q4 data <br>
+     - **Results:** This prediction approach did not yield suitable results. <br>
      - **Conclusion:** The topics for Q1 dataset are not directly applicable to Q2-Q4 dataset.
 
 
