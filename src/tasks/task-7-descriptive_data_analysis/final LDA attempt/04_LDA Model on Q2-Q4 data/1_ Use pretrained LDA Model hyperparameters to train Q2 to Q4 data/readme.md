@@ -1,1 +1,11 @@
 Method 1 results.
+
+A good topic model was obtained with 6 distinct topics:
+
+They are as follows (LC= long-covid).
+1. Vaccine side-effects (and general anti-vax/ anti-LC narrative)
+2. Anger or anxiety about LC information
+3. Aftermath of LC or vaccine
+4. Variants
+5. Discussion or Information about the science/knowledge surrounding LC.
+6. Impact of LC in terms of time OR Risks/Symptoms of LC.
