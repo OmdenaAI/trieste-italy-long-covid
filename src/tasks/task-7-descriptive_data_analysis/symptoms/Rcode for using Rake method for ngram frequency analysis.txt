@@ -1,0 +1,72 @@
+#https://medium.datadriveninvestor.com/rake-rapid-automatic-keyword-extraction-algorithm-f4ec17b2886c
+
+b <- read.csv("file.csv", header = T)
+View(b)
+
+
+install.packages("NLP")
+install.packages("tm")
+
+library(NLP)
+library(dplyr)
+library(tm)
+library(stringr)
+
+text <- iconv(a$Tweet)
+
+text <- Corpus(VectorSource(text))
+inspect(text[1:5])
+
+text <- tm_map(text, stemDocument)
+text <- tm_map(text, stripWhitespace)
+inspect(text[1:3])
+
+tdm <- TermDocumentMatrix(a$text)
+tdm <- as.matrix(tdm)
+tdm[1:10, 1:20]
+
+library(udpipe)
+udmodel <- udpipe_download_model(language = "italian")
+udmodel
+
+x <- udpipe(a$fix_text,
+            object = udmodel)
+View(x)
+
+stats <- subset(x, upos %in% "NOUN")
+stats <- txt_freq(x = stats$lemma)
+library(lattice)
+
+stats$key <- factor(stats$key, levels = rev(stats$key))
+barchart(key ~ freq, data = head(stats, 30), col = "blue", main = "Most occurring nouns", xlab = "Freq")
+
+
+## Collocation (words following one another)
+stats <- keywords_collocation(x = x, 
+                              term = "token", group = c("doc_id", "paragraph_id", "sentence_id"),
+                              ngram_max = 4)
+
+## Co-occurrences: How frequent do words occur in the same sentence, in this case only nouns or adjectives
+stats <- cooccurrence(x = subset(x, upos %in% c("NOUN", "ADJ")), 
+                      term = "lemma", group = c("doc_id", "paragraph_id", "sentence_id"))
+
+## Co-occurrences: How frequent do words follow one another
+stats <- cooccurrence(x = x$lemma, 
+                      relevant = x$upos %in% c("NOUN", "ADJ"))
+## Co-occurrences: How frequent do words follow one another even if we would skip 2 words in between
+stats <- cooccurrence(x = x$lemma, 
+                      relevant = x$upos %in% c("NOUN", "ADJ"), skipgram = 2)
+
+z = print(stats)
+
+stats <- keywords_rake(x = x, 
+                       term = "token", group = c("doc_id", "paragraph_id", "sentence_id"),
+                       relevant = x$upos %in% c("NOUN", "ADJ"),
+                       ngram_max = 4)
+View(stats)
+print(stats)
+#the output from this file can be used to identify relevant keywords, frequency, and rake.
+write.csv(stats,"stats.csv")
+
+
+
