@@ -1,0 +1,3 @@
+[submodule "gradio_dashboard"]
+	path = gradio_dashboard
+	url = https://huggingface.co/spaces/Santarabantoosoo/Sentiments_topic_modeling_ITALIAN
